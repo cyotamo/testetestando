@@ -2,6 +2,7 @@ document.getElementById("meuFormulario").addEventListener("submit", function(e) 
     e.preventDefault();
 
     const dados = new FormData(this);
+    // Processa o ficheiro PDF antes de enviar
     const ficheiroPDF = document.getElementById("ficheiroPDF").files[0];
 
     if (!ficheiroPDF) {
